@@ -93,7 +93,7 @@ function SmokeTestExecutePage() {
         <div className="results-table">
           <table>
             <thead className="results-tb-head">
-              <tr>
+              <tr className="results-tr">
                 <th>Test Name</th>
                 <th>Uploaded By</th>
                 <th>Upload time</th>
@@ -106,7 +106,7 @@ function SmokeTestExecutePage() {
             <tbody className="results-tb-body">
               {testsData.map((testData) => {
                 return (
-                  <tr key={testData.RowKey}>
+                  <tr className="results-tb-tr-body" key={testData.RowKey}>
                     <td>{testData.testName}</td>
                     <td>{testData.uploadedBy}</td>
                     <td>{new Date(testData.Timestamp).toLocaleString()}</td>

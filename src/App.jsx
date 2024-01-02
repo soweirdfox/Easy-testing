@@ -3,18 +3,19 @@ import "./App.css";
 
 import { Route, Routes } from "react-router";
 import Home from "./Pages/Home/Home";
-import SmokeTestPage from "./Pages/SmokeTestPage.jsx/SmokeTestPage";
-import SmokeTestExecutePage from "./Pages/SmokeTestPage.jsx/SmokeTestExecute/SmokeTestExecutePage";
+import SmokeTestPage from "./Pages/SmokeTestPage/SmokeTestPage"
+import SmokeTestExecutePage from "./Pages/SmokeTestPage/SmokeTestExecute/SmokeTestExecutePage";
 import LoginPage from "./Pages/Login/LoginPage";
-import SmokeTestResultsPage from "./Pages/SmokeTestPage.jsx/SmokeTestResults/SmokeTestResultsPage";
+import SmokeTestResultsPage from "./Pages/SmokeTestPage/SmokeTestResults/SmokeTestResultsPage";
 import PrivateRoutes from "./auth/PrivateRoutes";
 import MainPage from "./Pages/MainPage";
-import SmokeTestResultsDetails from "./Pages/SmokeTestPage.jsx/SmokeTestResults/SmokeTestResultsDetails/SmokeTestResultsDetails";
+import SmokeTestResultsDetails from "./Pages/SmokeTestPage/SmokeTestResults/SmokeTestResultsDetails/SmokeTestResultsDetails";
 import RegressionTestPage from "./Pages/RegressionTestPage";
 import APITestPage from "./Pages/APITestPage";
 import LoadTestPage from "./Pages/LoadTestPage";
 import StressTestPage from "./Pages/StressTestPage";
 import IntergationTestPage from "./Pages/IntergationTestPage";
+import SmokeTestUploadPage from "./Pages/SmokeTestPage/SmokeTestUpload/SmokeTestUploadPage"
 
 function App() {
   return (
@@ -28,7 +29,7 @@ function App() {
               <Route path="/" element={<SmokeTestResultsPage />} />
               <Route path="report" element={<SmokeTestResultsPage />} />
               <Route path="execute" element={<SmokeTestExecutePage />} />
-             {/*} <Route path="upload" element={<UploadSST />} />*/}
+              <Route path="upload" element={<SmokeTestUploadPage />} />
               <Route path="details" element={<SmokeTestResultsDetails />} />
             </Route>
             <Route path="/RT" element={<RegressionTestPage />}/>

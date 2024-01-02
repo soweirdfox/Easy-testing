@@ -255,138 +255,131 @@ body{
   border-bottom: 2px solid var(--logo-color);
 }
 
-/* popup */
-.popup {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(45, 45, 45, 0.7); 
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  z-index: 999; 
-}
-
-.popup-content {
-  background: #424242;
-  width: 90%;
-  height: 90%;
-  display: flex;
-  flex-direction: column;
-  padding: 20px;
-  border-radius: 5px;
-  box-shadow: 0px 0px 10px 0px #000;
-}
-.popup-content h2{
-  color: #fff;
-  padding: 2rem;
-}
-.popup-content .urlButtons{
-  float: right;
-}
-.popup-content .urlButtons button{
-  width:5rem;
-  height: 2rem;
-  background-color: #009688;
-  color: #fff;
-  margin: 2rem 0.5rem;
-  cursor: pointer;
-}
-.popup-content .urlButtons .close{
-  background-color: #ff5252;
-  color: #fff;
-}
-.popup-content .table-url{
-  overflow-x: scroll;
-}
-.popup-content .table-url input{
-  background-color: #424242;
-  border: none;
-  height: 2rem;
-  color: #fff;
-}
-.popup-content .table-url .remove-url{
-  width:5rem;
-  height: 2rem;
-  background-color: #ff5252;
-  color: #fff;
-  cursor: pointer;
-}
-.url-titles{
-  display: flex;
-  margin: 20px auto;
-  gap: 15px;
-  color: #fff;
-}
-hr{
-  color: #fff;
-  width: 100%;
-}
-
-.upl-th{
-  padding: 0;
-}
-
-.popup-header{
-  display: flex;
-  flex-direction: column;
-}
-
-.popup-name-div, .urlButtons{
-  display: flex;
-  justify-content: flex-end;
-}
-
-.test-name-input{
-  width: 180px;
-  background-color: #424242;
-  border: none;
-  border-bottom: 1px solid #fff;
-  padding-bottom: 14px;
-  padding-left: 10px;
-  font-size: 16px;
-  color: #ececec;
-}
-
-.test-name-input::placeholder{
-  font-size: 17px;
-  padding-left: 10px;
-}
-
-.test-name-input:focus {
-  color: #ececec;
-  outline: none;
-  border-bottom: 1px solid #009688;
-}
-
-/* sst upload */
-.upl-btn-container{
-  display:flex;
-  justify-content: center;
-  width: 70%;
-  margin-top: -27px;
-  
-}
+/*Upload page*/
 
 .upload-container{
-  width: 90%;
-  background-color: #424242;
+  width: 70%;
+  background-color: var(--medium-color);
   box-shadow: 0 3px 1px -2px rgba(0,0,0,.2), 0 2px 2px 0 rgba(0,0,0,.14), 0 1px 5px 0 rgba(0,0,0,.12);
-  padding: 24px;
+  padding: 40px;
+  display: flex;
+  justify-content: flex-start;
+  padding-left: 60px;
+  flex-direction: column;
+  margin-left: 50px;
 }
 
-.construct-btn{
+.upl-btn-main-container{
+  display: flex;
+}
+
+.upl-btn-container{
+  display:flex;
+  width: 70%;
+ }
+
+.upload-btn{
   width: 200px;
   color: #fff;
   font-size: 14px;
-  background-color: #009688;
+  background-color: var(--dark-color);
   line-height: 36px;
   border: none;
   border-radius: 2px;
   cursor: pointer;
   box-shadow: 0 3px 1px -2px rgba(0,0,0,.2), 0 2px 2px 0 rgba(0,0,0,.14), 0 1px 5px 0 rgba(0,0,0,.12);
+}
+
+
+/*Upload Popup*/
+.ReactModal__Overlay{
+  background-color: inherit !important; 
+}
+
+.ReactModal__Content {
+  margin-top:50px;
+  width: 90%;
+  background: var(--dark-color) !important;
+  border: 1px solid var(--light-color) !important;
+  padding: 20px 70px !important;
+}
+
+
+
+.upl-popup-main-container{
+  width: 100%;
+  height: 100%;
+}
+
+.upl-h2-header{
+  display:flex;
+  justify-content: center;
+  padding: 20px 0;
+  color: var(--lightest-color);
+}
+
+.upl-instructions-container{
+  padding: 20px 0px 20px 30px;
+}
+
+.upl-instr-header{
+  padding-bottom: 20px;
+  color: var(--lightest-color);
+}
+
+.upl-instructions li{
+  padding-bottom: 5px;
+  color: var(--lightest-color);
+}
+
+.upl-buttons-main-container{
+  padding: 80px 30px;
+  display: flex;
+  justify-content: center;
+}
+
+.upload-table{
+  background-color: var(--dark-color);
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 2px;
+  box-shadow: 0 3px 1px -2px rgba(0,0,0,.2), 0 2px 2px 0 rgba(0,0,0,.14), 0 1px 5px 0 rgba(0,0,0,.12);
+}
+
+.upl-buttons{
+  margin: 0 20px;
+  min-width: 5.5rem;
+  line-height: 2.25rem;
+  font-size: 0.875rem;
+  font-weight: 700;
+  color: var(--dark-color);
+  padding: 2px 3rem;
+  border-radius: 0.125rem;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0 0.188rem 0.063rem -0.125rem rgba(0,0,0,.2), 0 0.125rem 0.125rem 0 rgba(0,0,0,.14), 0 0.063rem 0.313rem 0 rgba(0,0,0,.12);
+}
+
+.upl-input {
+  background-color: var(--dark-color);
+  border: 2px solid var(--medium-color);
+  border-radius: 2px;
+  padding: 5px;
+  color: var(--light-font-color);
+}
+
+.upl-input:focus{
+  outline: none;
+}
+
+.save-btn{
+  background-color: var(--lightest-color);
+}
+
+.close-btn{
+  background-color: var(--logo-color);
 }
 
 /*SST Results */
@@ -429,8 +422,12 @@ hr{
   height: 3rem;
 }
 
-tr {
+.results-tb-tr-body, .results-tr {
   border-bottom: 0.063rem solid rgba(255, 255, 255, .12);
+}
+
+.upl-tb-tr-body{
+  border-bottom: none;
 }
 
 .result-button{
