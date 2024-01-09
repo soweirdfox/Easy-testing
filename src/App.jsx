@@ -2,7 +2,7 @@ import React from "react";
 import "./App.css";
 
 import { Route, Routes } from "react-router";
-import Home from "./Pages/Home/Home";
+import ResultsPage from "./Pages/ResultsPage/ResultsPage";
 import SmokeTestPage from "./Pages/SmokeTestPage/SmokeTestPage"
 import SmokeTestExecutePage from "./Pages/SmokeTestPage/SmokeTestExecute/SmokeTestExecutePage";
 import LoginPage from "./Pages/Login/LoginPage";
@@ -23,8 +23,7 @@ function App() {
       <Routes>
         <Route path="/auth" element={<LoginPage />} />
         <Route element={<PrivateRoutes />}>
-          <Route path="/" element={<MainPage />}>
-            <Route path="/Results" element={<Home />} />
+          <Route path="/" element={<MainPage />}>        
             <Route path="/" element={<SmokeTestPage />}>
               <Route path="/" element={<SmokeTestResultsPage />} />
               <Route path="report" element={<SmokeTestResultsPage />} />
@@ -37,6 +36,7 @@ function App() {
             <Route path="/LT" element={<LoadTestPage />}/>
             <Route path="/STT" element={<StressTestPage />}/>
             <Route path="/IT" element={<IntergationTestPage />}/>
+            <Route path="/Results" element={<ResultsPage />} />
             
           </Route>
         </Route>

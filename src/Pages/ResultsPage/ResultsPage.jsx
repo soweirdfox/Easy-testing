@@ -1,7 +1,7 @@
 import React from 'react';
 import CircleDiagram from '../../Components/CircleDiagram';
 
-function Home() {
+function ResultsPage() {
   return (
     <div className="home-main-container">
       <CircleDiagram />
@@ -10,4 +10,4 @@ function Home() {
   )
 }
 
-export default Home
+export default ResultsPage

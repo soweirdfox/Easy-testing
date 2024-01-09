@@ -355,7 +355,7 @@ body{
   font-size: 0.875rem;
   font-weight: 700;
   color: var(--dark-color);
-  padding: 2px 3rem;
+  
   border-radius: 0.125rem;
   border: none;
   cursor: pointer;
@@ -376,10 +376,12 @@ body{
 
 .save-btn{
   background-color: var(--lightest-color);
+  padding: 2px 10px;
 }
 
 .close-btn{
   background-color: var(--logo-color);
+  padding: 2px 3rem;
 }
 
 /*SST Results */
